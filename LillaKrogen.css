@@ -1,275 +1,272 @@
-@media print {
 
-        body {
-                background-color: #f1f1f1;
-                justify-content: center;
-                /*overflow-x: hidden;*/
-        }
+body {
+        background-color: #f1f1f1;
+        justify-content: center;
+        /*overflow-x: hidden;*/
+}
 
-        .headborder {
-                border:0px solid #000;
-                position: relative;
-                width: 100%;
-                height: auto;
-                justify-content: center;
-        }
-        .headborder:after {
-                content: "";
-                position: absolute;
-                margin-top: 12%;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 90%;
-                height: 0.8px;
-                background-color: #000;
-        }
+.headborder {
+        border:0px solid #000;
+        position: relative;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+}
+.headborder:after {
+        content: "";
+        position: absolute;
+        margin-top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 0.8px;
+        background-color: #000;
+}
 
-        .Logga {
-                position: relative;
-                width: 8%;
-                height: auto;
-                margin-left: 45%;
-                margin-top: 2.2%;
-        }
+.Logga {
+        position: relative;
+        width: 8%;
+        height: auto;
+        margin-left: 45%;
+        margin-top: 2.2%;
+}
 
-        .imgsearch {
-                position: absolute;
-                left: 90%;
-                margin-top: 5%;
-                width: 2%;
-                height: auto;
-        }
+.imgsearch {
+        position: absolute;
+        left: 90%;
+        margin-top: 5%;
+        width: 2%;
+        height: auto;
+}
 
-        .imgmenu {
-                position: absolute;
-                left: 8%;
-                margin-top: 5%;
-                width: 2%;
-                height: auto;
+.imgmenu {
+        position: absolute;
+        left: 8%;
+        margin-top: 5%;
+        width: 2%;
+        height: auto;
 
-        }
-        .imgcontainer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 4%;
-                max-width: 100%;
-                height: auto;
-        }
-        .imgcontainer1 {
-                display: block;
-                width: 65%;
-                height: auto;
-        }
+}
+.imgcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+        max-width: 100%;
+        height: auto;
+}
+.imgcontainer1 {
+        display: block;
+        width: 65%;
+        height: auto;
+}
 
-        .openhours {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 2%; 
-                margin-top: 4%;     
-        }
+.openhours {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%; 
+        margin-top: 4%;     
+}
 
-        .openhours1 {
-                text-align: center;
-                font-family: 'Merriweather' serif;
-                font-size: larger;
-        }
-        .openhours1 b {
-                font-weight: bold;
-        }
+.openhours1 {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: larger;
+}
+.openhours1 b {
+        font-weight: bold;
+}
 
-        .BokaBord {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 5%;
-        }
+.BokaBord {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+}
 
-        .BokaBord1 {
-                text-align: center;
-                font-family: 'Merriweather' serif;
-                font-size: 140%;
-                color: #fff;
-        }
+.BokaBord1 {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: 140%;
+        color: #fff;
+}
 
-        .BokaBord1::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 15%;
-                height: 70%;
-                background-color: #000;
-                z-index: -1;
-                border-radius: 10px;
-        }
-        .menytext {
-                position: relative;
-                display: flex;
-                justify-content: center;      
-        }
+.BokaBord1::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15%;
+        height: 70%;
+        background-color: #000;
+        z-index: -1;
+        border-radius: 10px;
+}
+.menytext {
+        position: relative;
+        display: flex;
+        justify-content: center;      
+}
 
-        .menytext1 {
-                text-align: center;
-                font-family: 'Merriweather' serif;
-                font-size: xx-large;
-                font-weight: bold;
-        }
+.menytext1 {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: xx-large;
+        font-weight: bold;
+}
 
-        .menyer {
-                position: relative;
-                display: flex;
-                justify-content: space-evenly;
-                width: 100%;
-                border: #000 solid 0px;
-        }
-        .meny {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-        }
+.menyer {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        border: #000 solid 0px;
+}
+.meny {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
 
-        .meny p {
-                position: relative;
-                font-family: 'Merriweather' serif;
-                text-align: center;
-                font-size: x-large;
-                color: #000;
-        }
-        .meny a {
-                text-decoration: none;
-                width: 100%;
-                height: auto;
-        }
-        .meny a img {
-                width: 100%;
-                height: auto;
-        }
+.meny p {
+        position: relative;
+        font-family: 'Merriweather' serif;
+        text-align: center;
+        font-size: x-large;
+        color: #000;
+}
+.meny a {
+        text-decoration: none;
+        width: 100%;
+        height: auto;
+}
+.meny a img {
+        width: 100%;
+        height: auto;
+}
 
-        .Erbjud {
-                text-align: center;
-                font-family: 'Merriweather' serif;
-                font-size: xx-large;
-                margin-top: 10%;
-                width: 100%;
-                height: auto;
-        }
+.Erbjud {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: xx-large;
+        margin-top: 10%;
+        width: 100%;
+        height: auto;
+}
 
-        .ErbjudBild {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 25%;
-                height: auto;
-        }
+.ErbjudBild {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: auto;
+}
 
-        .ErbjudBild1 {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: auto;
-        }
+.ErbjudBild1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+}
 
-        .insta {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                font-family: 'Merriweather' serif;
-                font-size: xx-large;
-                margin-top: 8%;
-        }
+.insta {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-family: 'Merriweather' serif;
+        font-size: xx-large;
+        margin-top: 8%;
+}
 
-        .insta1 {
-                text-decoration: none;
-                color: #000;
-        } 
+.insta1 {
+        text-decoration: none;
+        color: #000;
+} 
 
-        .insta2 {
-                position: relative;
-                display: flex;
-                width: 100%;
-                height: auto;
-                margin-bottom: 12%;
-                justify-content: center;
-        }
+.insta2 {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 12%;
+        justify-content: center;
+}
 
-        .insta-image {
-                justify-content: center;
-                width: 100%;
-                height: auto;
-        }
+.insta-image {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+}
 
-        .botteninfo {
-                background-color: #9C9C9C;
-                padding-top: 2%;
-                padding-bottom: 2%;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Merriweather' serif;
-                font-size: medium;
-                width: 100%;
-                display: flex;
-        }
+.botteninfo {
+        background-color: #9C9C9C;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Merriweather' serif;
+        font-size: medium;
+        width: 100%;
+        display: flex;
+}
 
-        .centerinfo{
-                display: flex;
-                justify-content: space-evenly;
-                width: 100%;
-        }
+.centerinfo{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+}
 
-        .info {
-                flex: 1;
-                margin-left: 20%;
-        }
+.info {
+        flex: 1;
+        margin-left: 20%;
+}
 
-        .form {
-                position: relative;
-                flex: 1;
-        }
+.form {
+        position: relative;
+        flex: 1;
+}
 
-        .meny {
-                position: relative;
-                margin-right: 2%;
-                width: 100%;
-                height: auto;
-        }
+.meny {
+        position: relative;
+        margin-right: 2%;
+        width: 100%;
+        height: auto;
+}
 
-        .meny1 {
-                position: relative;
-                margin-top: 8%;
-                margin-left: 0%;
-                width: 60%;
-                height: auto;
-        }
+.meny1 {
+        position: relative;
+        margin-top: 8%;
+        margin-left: 0%;
+        width: 60%;
+        height: auto;
+}
 
-        .Viner {
-                position: relative;
-                margin-left: -1%;
-                margin-top: 8%;
-                width: 100%;
-                height: auto;
-        }
-        .viner2 {
-                text-align: center;
-                font-family: 'Merriweather' serif;
-                font-size: 150%;
-        }
-        .Video-container {
-                position: relative;
-                margin-left: 10%;
-        }
+.Viner {
+        position: relative;
+        margin-left: -1%;
+        margin-top: 8%;
+        width: 100%;
+        height: auto;
+}
+.viner2 {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: 150%;
+}
+.Video-container {
+        position: relative;
+        margin-left: 10%;
+}
 
-        .VinVideo {
-                position: relative;
-                width: 50%;
-                height: auto;
-                margin-left: 24%;
-        }
-
+.VinVideo {
+        position: relative;
+        width: 50%;
+        height: auto;
+        margin-left: 24%;
 }
