@@ -1,3 +1,17 @@
+@media print {
+        body {
+            background-color: white;
+            justify-content: center;
+        }
+        .headborder, .imgsearch, .imgmenu, .imgcontainer, .openhours, .BokaBord, .menytext, 
+        .menyer, .Erbjud, .ErbjudBild, .insta, .insta2, .botteninfo, .centerinfo, .info, 
+        .form, .meny, .meny1, .Viner, .viner2, .Video-container, .VinVideo {
+            display: none;
+        }
+        body, p, h1, h2, h3, h4, h5, h6 {
+            color: black !important;
+        }
+}
 
 body {
         background-color: #f1f1f1;
@@ -12,6 +26,7 @@ body {
         height: auto;
         justify-content: center;
 }
+
 .headborder:after {
         content: "";
         position: absolute;
@@ -31,22 +46,6 @@ body {
         margin-top: 2.2%;
 }
 
-.imgsearch {
-        position: absolute;
-        left: 90%;
-        margin-top: 5%;
-        width: 2%;
-        height: auto;
-}
-
-.imgmenu {
-        position: absolute;
-        left: 8%;
-        margin-top: 5%;
-        width: 2%;
-        height: auto;
-
-}
 .imgcontainer {
         display: flex;
         justify-content: center;
@@ -74,6 +73,7 @@ body {
         font-family: 'Merriweather' serif;
         font-size: larger;
 }
+
 .openhours1 b {
         font-weight: bold;
 }
@@ -90,6 +90,9 @@ body {
         font-family: 'Merriweather' serif;
         font-size: 140%;
         color: #fff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
 }
 
 .BokaBord1::before {
@@ -98,12 +101,159 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 15%;
-        height: 70%;
+        width: 200px;
+        height: 160%;
         background-color: #000;
         z-index: -1;
         border-radius: 10px;
 }
+
+.popupOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
+        z-index: 999; /* Ensure it's below the popupCalendar */
+}
+
+.popupCalendar {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 60%;
+        background-color: #fff;
+        border: 1px solid #000000;
+        z-index: 999;
+}
+
+.xButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding: 0;
+        width: 30px; /* Set the width and height of the close button */
+        height: 30px;
+        border-radius: 50%; /* Make the close button circular */
+        background-color: #AF782A; /* Set the background color of the close button */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+}
+
+.xButton:hover {
+        background-color: #774f17; /* Change the background color on hover */
+}
+    
+.popupCalendar.active {
+        display: block;
+}
+
+.nextButton {
+        margin-left: 80%;
+        background-color: #AF782A;
+        border: #000 1px solid;
+        width: 10%;
+        height: 4%;
+        border-radius: 5px;
+}
+
+.nextButton:hover {
+        background-color: #774f17; /* Change the background color on hover */
+}
+
+.calendar {
+        width: 55%;
+        margin: 0 auto;
+}
+
+.month {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 150%;
+        margin-bottom: 10px;
+}
+
+.weekdays {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+}
+
+.weekday {
+        flex: 1;
+        text-align: center;
+}
+
+.days {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.day {
+        flex: 0 0 calc(100% / 7); /* Ensure each box takes equal width */
+        text-align: center; /* Center-align the day text */
+        margin-bottom: 5px;
+        padding: 10px; /* Adjust padding to create space around the day text */
+        border: 1px solid #ccc;
+        box-sizing: border-box; /* Include padding and border in the box size calculation */
+}
+
+.popupPersons {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        width: 30%;
+        height: 60%;
+}
+
+.popupPersons h2 {
+        text-align: center;
+        font-family: 'Merriweather' serif;
+        font-size: 150%;
+        font-weight: bold;
+}
+    
+.buttons {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Center-align buttons horizontally */
+        gap: 5%; /* Gap between buttons */
+        
+}
+    
+.buttons button {
+        margin: 0 1.3%;
+        width: 15%;
+        height: 40px;
+        margin-top: 5%;
+        justify-content: center;
+        background-color: #AF782A;
+        border: #6b6b6b 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+.buttons button:hover {
+        background-color: #774f17;
+}
+
 .menytext {
         position: relative;
         display: flex;
@@ -135,13 +285,13 @@ body {
         position: relative;
         font-family: 'Merriweather' serif;
         text-align: center;
-        font-size: x-large;
-        color: #000;
+        font-size: x-large;    
 }
 .meny a {
         text-decoration: none;
-        width: 100%;
+        width: 70%;
         height: auto;
+        color: #000;
 }
 .meny a img {
         width: 100%;
@@ -181,7 +331,7 @@ body {
         justify-content: center;
         font-family: 'Merriweather' serif;
         font-size: xx-large;
-        margin-top: 8%;
+        margin-top: 14%;
 }
 
 .insta1 {
@@ -269,4 +419,106 @@ body {
         width: 50%;
         height: auto;
         margin-left: 24%;
+}
+
+.imgsearch {
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+        margin-top: 5%;
+        width: 2%;
+        height: auto;
+}
+
+.search-bar {
+        display: none;
+        position: absolute;
+        top: 58%;
+        right: 4.5%;
+        transform: translate(-50%, -50%);
+        background-color: #AF782A;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 14%;
+        height: auto;
+}
+
+.search-bar input {
+        width: 60%;
+        padding: 2%;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+}
+
+.search-bar button {
+        margin-left:0%;
+        padding: 5px 10px;
+        background-color: #747474;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+}
+
+.search-bar button:hover {
+        background-color: #774f17;
+}
+
+.imgmenu {
+        cursor: pointer;
+        position: absolute;
+        left: 8%;
+        margin-top: 5%;
+        width: 2%;
+        height: auto;
+}
+
+.popupMenu {
+        position: fixed;
+        top: 0;
+        left: -15%;
+        width: 15%;
+        height: 100%;
+        background-color: #AF782A;
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        padding-top: 20px;
+}
+
+.popupMenu button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+}
+    
+.popupMenu ul {
+        list-style-type: none;
+        padding: 0;
+}
+
+.popupMenu ul li {
+        padding: 10px;
+}
+    
+.popupMenu ul li a {
+        color: black;
+        text-decoration: none;
+}
+
+.popupMenu ul li hr {
+        border: 0;
+        border-top: 1px solid black;
+}
+
+.infoMenu {
+        flex: 1;
+        margin-top: 90%;
+        margin-left: 5%;
 }

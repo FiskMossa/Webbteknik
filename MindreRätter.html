@@ -12,9 +12,39 @@
                                 <img src="Logga.png" class = "Logga">
                         </a>
 
-                        <img src="search.png" class = imgsearch alt = "Picture of search icon">
-                        
-                        <img src="menu.png" class = imgmenu alt = "Picture of Burgermenu icon">  
+                        <img src="search.png" class="imgsearch" alt="Picture of search icon" id="searchIcon">
+
+                        <!-- Search bar (initially hidden) -->
+                        <div class="search-bar" id="searchBar">
+                            <input type="text" placeholder="Search...">
+                            <button onclick="closeSearch()">Close</button>
+                        </div>
+                        <script src="Lillakrogen.js"></script>
+                                                
+                        <img src="menu.png" class="imgmenu" alt="Picture of Burgermenu icon" id="menuIcon">
+
+                        <div class="popupMenu" id="popupMenu">
+                                <button id="closeButton">&times;</button>
+                                <ul>
+                                        <li><a href="index.html#boka-bord">Boka bord</a></li>
+                                        <li><hr></li>
+                                        <li><a href="index.html#menyer">Menyer</a></li>
+                                        <li><hr></li>
+                                        <li><a href="index.html#Erbjudanden">Erbjudanden</a></li>
+                                        <li><hr></li>
+                                        <li><a href="index.html#instagram">Instagram</a></li>
+                                        <li><hr></li>
+                                        <li><a href="index.html#footer">Kontaktinfo</a></li>
+                                </ul>
+                                <div class="infoMenu">        
+                                        <p><b>Öppettider</b> - Tisdag-Lördag - Klockan 17:00 till 00:00</p>
+                                        <p><b>Instagram</b> - @lillakrogenumea</p>
+                                        <p><b>Telefonnummer</b> - 090-13 73 92</p>
+                                        <p><b>Mail</b> - Info@lillakrogen.se</p>
+                                        <p><b>Adress</b> - Storgatan 62A</p>
+                                </div>
+                        </div>
+                        <script src="Lillakrogen.js"></script>                        
                 </div>
 
                 <div class = "meny">
